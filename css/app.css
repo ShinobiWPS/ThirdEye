@@ -1,0 +1,118 @@
+html,body{
+    color: white;
+    background-color: black;
+}
+nav.mobile-bar{
+    position: fixed;
+}/*written here can override the core style,and only for this <nav> class*/
+nav.tab-bar{
+    background: none repeat scroll 0% 0% #222;
+     -webkit-box-shadow: 1px 15px 17px 0px rgba(51, 181, 229, 0.45);
+        -moz-box-shadow: 1px 15px 17px 0px rgba(51, 181, 229, 0.45);
+             box-shadow: 1px 15px 17px 0px rgba(51, 181, 229, 0.45);
+}
+.text-rwd-long{
+    word-break:break-all;
+}/*rename it ASAP*/
+ul.vcard li{
+    border-top: 3px solid #33b5e3
+}
+ul.vcard li:first-child{
+    border-top: none;
+}
+ul.vcard li:last-child{
+    border-bottom: none;
+}
+ul#bot-grid {
+    background-color: black;
+}
+ul.online li a{
+    color: white;
+}
+h1.title{
+    font-family:"Trebuchet MS", serif;
+    font-weight: bolder;
+    color: white;
+    text-shadow:0 0 1px #33b5e5,
+                0 0 5px #33b5e5,
+                0 0 10px #33b5e5,
+                0 0 15px #33b5e5,
+                0 0 20px #33b5e5;
+}
+img.top-4-mobile-bar{
+    margin-top: 3rem;
+}
+.online{
+    background: #33b5e5;
+    color: black;
+}
+.panel{
+    background-color: #333;
+}
+.white-bg{
+    background: white;
+}
+.holo{
+    color:#33b5e5;
+    text-shadow:0 0 15px #33b5e3;
+    background-color: #333;
+    padding: 1rem;
+}
+.panel p{
+    color: white;
+}
+.vcard{
+    border:none;
+    width: 100%;
+}
+.reveal-modal ,.inner-wrap{
+    background-color: black;
+}
+.reveal-modal{
+    box-shadow: 0 0 90px #33b5b3;
+}
+.reveal-modal h2{
+    color: #c9c9c9;
+    text-shadow:0 0 1px #33b5e5,
+                0 0 5px #33b5e5,
+                0 0 10px #33b5e5,
+                0 0 15px #33b5e5,
+                0 0 20px #33b5e5;
+}
+.close-reveal-modal{
+    background-color: white;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 5px;
+    font-size: 3.375rem;/*NON si sovrascrive al core*/
+    line-height: 0.4;/*NON si sovrascrive al core*/
+}
+.exit-off-canvas{
+    box-shadow: -4px 0 4px rgba(0, 0, 0, 0.9), 4px 0 4px rgba(0, 0, 0, 0.9);/*NON si sovrascriv al Core*/
+}
+fieldset legend {
+    background: none;
+}
+label {
+    color: white;
+}
+@media only screen and (max-width: 40em) {
+	    #content {
+            overflow-y: auto;
+            overflow-x: hidden; 
+        }
+        #content,
+        body,
+        html,
+        .off-canvas-wrap, 
+        .off-canvas-wrap .inner-wrap {
+            height: 100%;
+            width: 100%;
+        }
+        .header {
+            position: absolute;
+            top: 0;
+            width: 100%;
+            z-index: 99;
+        }
+}
